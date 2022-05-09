@@ -1,0 +1,27 @@
+[user]
+    name = Eric Weaver
+
+[credential]
+    helper = osxkeychain
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+    pager = true
+
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    dc = diff --cached
+    lg = log -p
+    who = shortlog -s --
+    sync = !git-pull && git-push
+    squash = "!f(){ git rebase -i $(git merge-base ${1:-master} $(git rev-parse --abbrev-ref HEAD)); };f"
+    alias = config --get-regexp ^alias\\.
+    aliases = config --get-regexp '^alias\\.'
