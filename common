@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+export DEV_HOME=${HOME}/dev
+export REPO_PATH=$(git rev-parse --show-toplevel)
+export MY_BIN=${HOME}/.bin
+
+function echo-err { echo "$@" 1>&2; }
+
+function exists-in-path {
+    if [[ -n $1 ]]; then
+        type -p "$1" > /dev/null 2>&1
+        return $?
+    else
+        return 1
+    fi
+}
+

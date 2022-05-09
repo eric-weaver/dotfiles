@@ -1,0 +1,58 @@
+cask_args appdir: '/Applications'
+tap 'shopify/shopify'
+tap 'graalvm/homebrew-tap'
+
+# essentials
+brew 'bash-completion'
+brew 'coreutils'
+brew 'git'
+brew 'jq'
+brew 'tmux'
+brew 'yq'
+cask 'firefox'
+cask 'spotify'
+
+# languages
+brew 'golang'
+brew 'gpm' # go package manager
+brew 'graalvm-ce-lts-java11'
+brew 'graalvm-ce-lts-java8'
+brew 'jenv'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
+
+# development tools
+cask 'intellij-idea-ce'
+cask 'sublime-text'
+cask 'docker'
+brew 'kubernetes-cli'
+brew 'terraform'
+
+# build tools
+brew 'maven'
+brew 'gradle'
+
+# cloud tools
+brew 'awscli'
+
+# utilities
+brew 'ffmpeg'
+brew 'htop'
+brew 'kcat'
+brew 'parallel'
+brew 'pwgen'
+brew 'shellcheck'
+brew 'telnet'
+brew 'toxiproxy'
+brew 'tree'
+brew 'wget'
+
+# Services
+brew 'mysql'
+brew 'postgresql'
+
+# etc
+mas 'slack', id: 803453959
+
+# Other
+brew 'libevent'
