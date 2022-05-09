@@ -3,6 +3,9 @@ source ./common
 
 [ -d "${DEV_HOME}" ] || mkdir -p "${DEV_HOME}"
 
+# Set Bash as default shell
+chsh -s /bin/bash
+
 sudo xcodebuild -license accept
 xcode-select --install;
 
