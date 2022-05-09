@@ -16,3 +16,6 @@ exists-in-path brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.
 brew update
 brew bundle --file="${REPO_PATH}/brew/Brewfile"
 
+# setup environment links
+symlink-src-to-target "${REPO_PATH}/bash_profile" "${HOME}/.bash_profile"
+symlink-src-to-target "${REPO_PATH}/profile.sh" "${HOME}/.profile"
