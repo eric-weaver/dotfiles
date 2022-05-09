@@ -8,9 +8,6 @@ if [[ "/bin/bash" != "$(dscl . -read ~/ UserShell | sed 's/UserShell: //')" ]]; 
     chsh -s /bin/bash
 fi
 
-sudo xcodebuild -license accept
-xcode-select --install;
-
 # bootstrap homebrew
 exists-in-path brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
