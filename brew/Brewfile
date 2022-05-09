@@ -16,11 +16,11 @@ cask 'spotify'
 # languages
 brew 'golang'
 brew 'gpm' # go package manager
-brew 'graalvm-ce-lts-java11'
-brew 'graalvm-ce-lts-java8'
 brew 'jenv'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
+cask 'graalvm-ce-lts-java11'
+cask 'graalvm-ce-lts-java8'
 
 # development tools
 cask 'intellij-idea-ce'
@@ -53,7 +53,7 @@ brew 'mysql'
 brew 'postgresql'
 
 # etc
-mas 'slack', id: 803453959
+cask 'slack'
 
 # Other
 brew 'libevent'
