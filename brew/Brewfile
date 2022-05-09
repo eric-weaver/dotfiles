@@ -23,11 +23,13 @@ cask 'graalvm-ce-lts-java11'
 cask 'graalvm-ce-lts-java8'
 
 # development tools
-cask 'intellij-idea-ce'
-cask 'sublime-text'
-cask 'docker'
 brew 'kubernetes-cli'
 brew 'terraform'
+cask 'docker'
+cask 'github'
+cask 'intellij-idea-ce'
+cask 'sublime-text'
+cask 'visualvm'
 
 # build tools
 brew 'maven'
@@ -49,11 +51,14 @@ brew 'tree'
 brew 'wget'
 
 # Services
+brew 'kafka'
 brew 'mysql'
 brew 'postgresql'
 
 # etc
+cask 'openvpn-connect'
 cask 'slack'
+cask 'zoom'
 
 # Other
 brew 'libevent'
