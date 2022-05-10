@@ -44,6 +44,9 @@ if [[ "/bin/bash" != "$(dscl . -read ~/ UserShell | sed 's/UserShell: //')" ]]; 
     chsh -s /bin/bash
 fi
 
+# Show hidden files
+defaults write com.apple.finder AppleShowAllFiles TRUE
+
 # bootstrap homebrew
 exists-in-path brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
