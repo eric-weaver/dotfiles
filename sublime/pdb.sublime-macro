@@ -1,0 +1,45 @@
+[
+	{
+		"args":
+		{
+			"characters": "import"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": " pdb;"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "pdb.set"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"characters": "_trace"
+		},
+		"command": "insert"
+	},
+	{
+		"args":
+		{
+			"contents": "($0)"
+		},
+		"command": "insert_snippet"
+	},
+	{
+		"args":
+		{
+			"by": "characters",
+			"forward": true
+		},
+		"command": "move"
+	}
+]

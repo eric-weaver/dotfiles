@@ -1,0 +1,14 @@
+// SublimeLinter Settings - User
+{
+    "debug": false,
+    "show_panel_on_save": "window",
+    "lint_mode": "load_save",
+    "linters": {
+        "flake8": {
+            "executable": "/usr/local/bin/flake8"
+        },
+        "hadolint": {
+            "executable": "/usr/local/bin/hadolint"
+        }
+    }
+}
