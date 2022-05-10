@@ -25,3 +25,9 @@
     squash = "!f(){ git rebase -i $(git merge-base ${1:-master} $(git rev-parse --abbrev-ref HEAD)); };f"
     alias = config --get-regexp ^alias\\.
     aliases = config --get-regexp '^alias\\.'
+    
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
