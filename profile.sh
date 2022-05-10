@@ -34,17 +34,6 @@ function sdiff-curl-jq {
   sdiff -s <(curl -sfS "$1" | jq .) <(curl -sfS "$2" | jq .)
 }
 
-function getlogs {
-  local resource="$1"
-  local type
-  if [[ ${resource} == *"."* ]]; then
-    type="deployment"
-  else
-    type="project"
-  fi
-  open "$(boxer get "${type}" "${resource}" --link-logs)" 2>/dev/null || echo "Unable to open logs"
-}
-
 alias docker-clean='docker rm $(docker stop $(docker ps -aq))'
 
 # jenv
