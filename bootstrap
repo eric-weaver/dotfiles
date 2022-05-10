@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 DEV_HOME="${HOME}/dev"
 REPO_PATH=$(git rev-parse --show-toplevel)
-SUBLIME_PATH="${HOME}/Library/Application Support/Sublime Text 3/Packages/User"
+SUBLIME_PATH="${HOME}/Library/Application Support/Sublime Text/Packages/User"
 
 function echo-err { echo "$@" 1>&2; }
 
