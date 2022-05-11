@@ -21,6 +21,7 @@ brew 'pyenv'
 brew 'pyenv-virtualenv'
 cask 'graalvm-ce-lts-java11'
 cask 'graalvm-ce-lts-java8'
+cask 'zulu-jdk11'
 
 # development tools
 brew 'kubernetes-cli'
