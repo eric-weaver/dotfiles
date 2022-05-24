@@ -29,6 +29,7 @@ brew 'terraform'
 cask 'docker'
 cask 'github'
 cask 'intellij-idea-ce'
+cask 'mysqlworkbench'
 cask 'sublime-text'
 cask 'visualvm'
 
