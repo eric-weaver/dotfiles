@@ -11,6 +11,7 @@ brew 'tmux'
 brew 'yq'
 cask 'barrier'
 cask 'firefox'
+cask 'rectangle'
 cask 'spotify'
 
 # languages
@@ -21,6 +22,7 @@ brew 'pyenv'
 brew 'pyenv-virtualenv'
 cask 'graalvm-ce-lts-java11'
 cask 'graalvm-ce-lts-java8'
+cask 'zulu-jdk8'
 cask 'zulu-jdk11'
 
 # development tools
@@ -42,6 +44,7 @@ brew 'awscli'
 
 # utilities
 brew 'ffmpeg'
+brew 'flake8'
 brew 'htop'
 brew 'kcat'
 brew 'parallel'

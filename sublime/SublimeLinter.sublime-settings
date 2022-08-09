@@ -5,10 +5,13 @@
     "lint_mode": "load_save",
     "linters": {
         "flake8": {
-            "executable": "/usr/local/bin/flake8"
+            "executable": "/opt/homebrew/bin/flake8"
         },
         "hadolint": {
             "executable": "/usr/local/bin/hadolint"
+        },
+        "shellcheck": {
+            "executable": "/opt/homebrew/bin/shellcheck"
         }
     }
 }
