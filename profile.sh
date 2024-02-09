@@ -18,7 +18,7 @@ function epoch-to-human ()
 {
   EPOCH="$1";
   if [ -n "$EPOCH" ]; then
-      gdate -u -d "@$EPOCH" +'%F %r %Z';
+      echo "$(gdate -d @"${EPOCH:0:10}" --utc --iso=s | cut -d '+' -f 1).${EPOCH:10}+00:00"
   fi
 }
 
